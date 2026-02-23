@@ -1,0 +1,23 @@
+{
+  "backend/main.mo": "Motoko backend actor with functions to submit scores, retrieve high scores filtered by threshold (>=1000), and a play function that traps with a game over message.",
+  "feature_evidence.json": "Feature evidence report documenting four implemented features: interactive gameplay mechanics, visual theme design, score tracking/persistence, and game asset rendering, with associated files and test IDs.",
+  "frontend-file-summaries.txt": "JSON-formatted summaries of frontend source files describing components for game rendering, controls, scoring, state management, and styling.",
+  "frontend/index.css": "Tailwind CSS configuration with custom OKLCH color system defining light and dark theme variables for game UI elements.",
+  "frontend/index.html": "HTML entry point with 'Game Arena' title that loads the React application via main.tsx script.",
+  "frontend/src/App.tsx": "Root React component that wraps GamePage in a QueryClientProvider and applies background styling.",
+  "frontend/src/components/Game/GameCanvas.tsx": "Canvas-based game renderer that preloads images, handles keyboard input, draws player/obstacles/collectibles, and displays game over overlay.",
+  "frontend/src/components/Game/GameControls.tsx": "Game control buttons component providing Start, Pause, and Restart actions with conditional rendering based on game state.",
+  "frontend/src/components/Game/GameLayout.tsx": "Layout wrapper providing header with game branding, main content area, and footer with caffeine.ai attribution link.",
+  "frontend/src/components/Game/ScoreDisplay.tsx": "Score display component showing current score and high score with trophy/star icons in styled containers.",
+  "frontend/src/hooks/useActor.ts": "Custom hook that creates and manages backend actor instances based on Internet Identity authentication state, invalidating dependent queries on identity changes.",
+  "frontend/src/hooks/useGameLogic.ts": "Custom hook managing core game loop logic including player movement via keyboard, obstacle/collectible spawning and movement, collision detection, and game state transitions.",
+  "frontend/src/hooks/useHighScore.ts": "React hook that fetches high scores from the backend actor using React Query and provides a mutation to submit new scores with automatic cache invalidation.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides Internet Identity authentication context and hooks for ICP, managing login state, identity persistence, and delegation validation with configurable AuthClient options.",
+  "frontend/src/hooks/useQueries.ts": "Exports a React Query hook to fetch high scores from the backend actor, enabled only when the actor is initialized and not fetching.",
+  "frontend/src/index.css": "Tailwind CSS configuration with custom CSS variables for light/dark themes, including game-specific color palette and Orbitron font import for display text.",
+  "frontend/src/lib/gameAssets.ts": "Defines paths to game asset images (background, player sprite, element) and provides a preloadImages function to load them asynchronously.",
+  "frontend/src/main.tsx": "Application entry point that sets up React Query, Internet Identity provider, and renders the root App component.",
+  "frontend/src/pages/GamePage.tsx": "Main game page component that orchestrates game logic, high score submission, and renders GameCanvas, GameControls, and ScoreDisplay components within GameLayout.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending the theme with custom OKLCH color system, game-specific colors, Orbitron font family, and animation keyframes for UI components.",
+  "project_state.json": "Project metadata tracking features, requirements, and image asset specifications for a game development project with score persistence and visual theming."
+}

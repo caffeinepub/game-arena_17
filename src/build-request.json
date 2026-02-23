@@ -1,0 +1,97 @@
+{
+  "kind": "build_request",
+  "title": "Create interactive game application",
+  "projectName": "Game Arena",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a playable game with interactive gameplay mechanics that responds to user input",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ],
+        "quotes": [
+          "Make a game"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Game has clear win/loss conditions or scoring system",
+        "User can interact with the game through keyboard or mouse controls",
+        "Game state updates in real-time based on user actions",
+        "Game can be started, played, and restarted"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Design a distinctive visual theme with cohesive colors, typography, and layout that creates an engaging gaming atmosphere",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Visual design uses a consistent color palette throughout the game interface",
+        "Typography choices enhance readability and match the game's theme",
+        "Layout provides clear visual hierarchy for game elements and UI controls",
+        "Overall aesthetic creates an immersive gaming experience"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Implement score tracking and persistence so players can see their current score and high scores are saved between sessions",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Current score is displayed during gameplay",
+        "High score is persisted in the backend and retrieved on game load",
+        "Score updates correctly based on game events",
+        "High score is updated when current score exceeds it"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Render generated game assets including background images, character sprites, or game element graphics as static assets in frontend/public/assets/generated",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Generated images are stored in frontend/public/assets/generated directory",
+        "Images are properly referenced and displayed in the game interface",
+        "Image assets load correctly without backend routing"
+      ]
+    }
+  ],
+  "constraints": [
+    "Use React with TypeScript for frontend implementation",
+    "Use Motoko for backend implementation in single-actor architecture",
+    "All backend logic must reside in the main actor file",
+    "Do not modify immutable frontend paths including useInternetIdentity hooks, useActor, main.tsx, and ui components",
+    "Use Tailwind CSS for styling",
+    "Use React Query for state management"
+  ],
+  "nonGoals": [
+    "Multiplayer functionality",
+    "Real-time chat or communication features",
+    "Third-party authentication beyond Internet Identity",
+    "Mobile app development",
+    "Integration with external game engines or frameworks beyond Three.js/React Three Fiber"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Game background with dynamic gradient or abstract pattern (game-background.dim_1920x1080.png)",
+      "Player character or game piece sprite illustration (player-sprite.dim_128x128.png)",
+      "Game element or obstacle graphic (game-element.dim_96x96.png)"
+    ],
+    "edits": []
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "frontend/src/App.tsx": "Main application component that renders the GamePage within a minimal wrapper.",
+  "frontend/src/pages/GamePage.tsx": "Main game page that orchestrates game state, score tracking, and integrates all game components with backend high score submission.",
+  "frontend/src/components/Game/GameLayout.tsx": "Layout wrapper component providing header with game branding, main content area, and footer with attribution.",
+  "frontend/src/components/Game/GameCanvas.tsx": "Canvas-based game renderer that displays the game world, handles player movement via keyboard input, renders obstacles and collectibles, and manages collision detection.",
+  "frontend/src/components/Game/GameControls.tsx": "Game control buttons component providing Start, Pause, and Restart functionality with appropriate visual states.",
+  "frontend/src/components/Game/ScoreDisplay.tsx": "Score display component showing current score and high score with trophy icons and styled containers.",
+  "frontend/src/hooks/useGameLogic.ts": "Custom hook managing core game logic including player movement, obstacle/collectible spawning, collision detection, and game state transitions with properly initialized useRef hooks.",
+  "frontend/src/hooks/useHighScore.ts": "Custom hook using React Query to fetch high scores from backend and submit new scores with cache invalidation.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for backend data fetching operations.",
+  "frontend/src/lib/gameAssets.ts": "Asset management utility providing paths to generated game images and preloading functionality.",
+  "frontend/src/index.css": "Global styles with OKLCH color system including custom game-specific color tokens and Orbitron display font import.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with game-specific color palette and Orbitron display font family."
+}

@@ -1,0 +1,85 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-a-playable-game-with-interactive-gameplay-mechanics-that-responds-to-user-input",
+      "featureTitle": "Create a playable game with interactive gameplay mechanics that responds to user input",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/Game/GameCanvas.tsx",
+        "frontend/src/components/Game/GameControls.tsx",
+        "frontend/src/hooks/useGameLogic.ts",
+        "frontend/src/pages/GamePage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-design-a-distinctive-visual-theme-with-cohesive-colors-typography-and-layout-that-creates-an-engaging-gaming-atmosphere",
+      "featureTitle": "Design a distinctive visual theme with cohesive colors, typography, and layout that creates an engaging gaming atmosphere",
+      "files": [
+        "frontend/src/components/Game/GameLayout.tsx",
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-score-tracking-and-persistence-so-players-can-see-their-current-score-and-high-scores-are-saved-between-sessions",
+      "featureTitle": "Implement score tracking and persistence so players can see their current score and high scores are saved between sessions",
+      "files": [
+        "frontend/src/components/Game/ScoreDisplay.tsx",
+        "frontend/src/hooks/useHighScore.ts",
+        "frontend/src/pages/GamePage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-render-generated-game-assets-including-background-images-character-sprites-or-game-element-graphics-as-static-assets-in-frontend-public-assets-generated",
+      "featureTitle": "Render generated game assets including background images, character sprites, or game element graphics as static assets in frontend/public/assets/generated",
+      "files": [
+        "frontend/src/components/Game/GameCanvas.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
